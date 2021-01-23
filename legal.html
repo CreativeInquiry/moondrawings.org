@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moon Drawings</title>
+    <!-- - ----- STANDARD META TAGS --------------------------------------------- -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"25c9516b86","applicationID":"13565845","transactionName":"dVdXFkYOWQ9QRhswDVhZTRBVTngadERETCNzbBkOUQZUDw==","queueTime":8,"applicationTime":3,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"25c9516b86",applicationID:"13565845"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- - ----- FAVICONS ------------------------------------------------------- -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- - ----- PER-PAGE META -------------------------------------------------- -->
+    
+    <!-- - ----- CSS ------------------------------------------------------------ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,500%7CPlayfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='css/application.css' rel='stylesheet'>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-61209632-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div class='container-fluid'>
+      <div class='header'>
+        <h4 class='text-muted hidden-xs pull-left'>
+          <a href='index.html'>moondrawings.org</a>
+        </h4>
+        <ul class='pull-right list-inline'>
+          <li>
+            <a href='index.html'>Home</a>
+          </li>
+          <li>
+            <a href='about.html'>About</a>
+          </li>
+          <li>
+            <a href='index.html'>Draw</a>
+          </li>
+          <li>
+            <a href='browse.html'>Browse</a>
+          </li>
+          <li>
+            <a href='faq.html'>FAQ</a>
+          </li>
+          <li>
+            <a href='team.html'>Team</a>
+          </li>
+          <li class='hidden-xs'>
+            <a href='legal.html'>Legal</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div class='row content'>
+        <div class='col-x3-12'>
+          <h2>TL;DR:</h2>
+          <p>If you contribute a drawing to this site, you give us the right to use it to make our work and to do what we like with it, including sharing it with this world and others.</p>
+          <p>You agree to only make a single drawing, and to not try to game or break this website.</p>
+          <p>You also agree that you're over 13 years of age, your drawing is your own creation, and that your drawing is appropriate.</p>
+          <p>You understand that we save your drawing and IP address on our servers, and that we use cookies to identify you.</p>
+          <p>No matter what the website may say, we have final say on which drawings we use. There's no guarantee that any particular drawing will make it into the final project.</p>
+          <p>If you share your email address with us, we will only use it to email you information about this project, and we will not share it with anyone.</p>
+          <p>If anything goes wrong, it's not our responsibility to fix it. This includes the project getting canceled, your drawing being lost, your computer breaking, the Andy rover not landing safely on the Moon, or the end of the world.</p>
+          <p>The <em>Moon Drawings</em> project and this website are copyright © 2015 Carnegie Mellon University, with the exception of <a href="browse.html">all visitor-contributed drawings</a>, which are <a href="http://creativecommons.org/about/cc0" target="_blank">dedicated to the public domain</a>.</p>
+        </div>
+      </div>
+      <div class='row content mumbo-jumbo'>
+        <div class='col-xs-12'>
+          <hr>
+          <h2>Moon Drawings Terms of Use</h2>
+          <h5 class='subhead'>(Effective as of April 15, 2015)</h5>
+          <p class='mumbo-jumbo'>Welcome to the <em>Moon Drawings</em> service (the “Service”). The following Terms of Use apply when you view or use the Service via our website located at <a href="index.html">http://www.moondrawings.org</a>. Please review the following terms carefully. By accessing or using the Service, you signify your agreement to these Terms of Use. If you do not agree to these Terms of Use, you may not access or use the Service.</p>
+          <h4>PRIVACY POLICY</h4>
+          <p class='mumbo-jumbo'>The Service creators (the "Team") respect the privacy of the Service users. Please refer to the Team’s Privacy Policy (<a href="privacy.html">found here</a>) which explains how we collect, use, and disclose information that pertains to your privacy.  When you access or use the Service, you signify your agreement to this Privacy Policy.</p>
+          <h4>ABOUT THE SERVICE</h4>
+          <p class='mumbo-jumbo'>The Service allows you to create a single line drawing for submission to an art project, in which such user-submitted drawings are etched in a physical medium and sent to the Moon, as part of the Moon Arts project at Carnegie Mellon University (CMU).</p>
+          <h4>REGISTRATION; RULES FOR USER CONDUCT <br />AND USE OF THE SERVICE</h4>
+          <p class='mumbo-jumbo'><strong>Age Restrictions:</strong> Visitors to this site may be exposed to unfiltered, user-generated content. For this reason, you must be at least 13 years old to register for and use the Service.</p>
+          <p class='mumbo-jumbo'><strong>Limits on Contribution:</strong> You may only create a single drawing using this service.</p>
+          <p class='mumbo-jumbo'><strong>Inclusion of Submitted Drawings:</strong> Any or all submitted drawings may be included in the final <em>Moon Drawings</em> project, and the final <em>Moon Drawings</em> project may or may not be included aboard the Astrobotic/CMU Moon mission. We offer no guarantees that any submitted drawing will be included in the project, nor that any submitted drawing will actually make it to the Moon.</p>
+          <p class='mumbo-jumbo'><strong>Cookies:</strong> Like many websites, we use "cookie" technology to collect additional website usage data and to improve our Services, but we do not require cookies for many parts of our Services such as browsing. A cookie is a small data file that is transferred to your computer's hard disk. The service may use both session cookies and persistent cookies to better understand how you interact with our Services, to monitor aggregate usage by our users and web traffic routing on our Services, and to customize and improve our Services. Most Internet browsers automatically accept cookies. You can instruct your browser, by changing its settings, to stop accepting cookies or to prompt you before accepting a cookie from the websites you visit. However, some Services may not function properly if you disable cookies.</p>
+          <p class='mumbo-jumbo'><strong>Log Data:</strong> Our servers automatically record information ("Log Data") created by your use of the Services. Log Data may include information such as your IP address, browser type, operating system, the referring web page, pages visited, location, your mobile carrier, device and application IDs, search terms, and cookie information. We receive Log Data when you interact with our Services, for example, when you visit our websites or sign into our Services. <em>Moon Drawings</em> uses Log Data to provide our Services and to measure, customize, and improve them.</p>
+          <p class='mumbo-jumbo'><strong>Third-Party Service Providers:</strong> The <em>Moon Drawings</em> project uses a variety of third-party services to help provide our Services, such as hosting our various databases and web pages, and to help us understand the use of our Services, such as Google Analytics. These third-party service providers may collect information sent by your browser as part of a web page request, such as cookies or your IP address.</p>
+          <p class='mumbo-jumbo'><strong>Non-Private or Non-Personal Information:</strong> We may share or disclose your non-private, aggregated or otherwise non-personal information, such as the drawings made when you interact with the Service.</p>
+          <p class='mumbo-jumbo'><strong>Law and Harm:</strong> Notwithstanding anything to the contrary in this Policy, we may preserve or disclose your information if we believe that it is reasonably necessary to comply with a law, regulation or legal request; to protect the safety of any person; to address fraud, security or technical issues; or to protect Moon Drawing's rights or property. However, nothing in our Privacy Policy is intended to limit any legal defenses or objections that you may have to a third party’s, including a government’s, request to disclose your information.</p>
+          <h4>USE RESTRICTIONS.</h4>
+          <p>
+            Your permission to use the Site is conditioned upon the following Use Restrictions and Conduct Restrictions: You agree that you will not under any circumstances:
+            <ul>
+              <li>post any information that is abusive, threatening, obscene, defamatory, libelous, or racially, sexually, religiously, or otherwise objectionable and offensive;</li>
+              <li>use the Service for any unlawful purpose or for the promotion of illegal activities;</li>
+              <li>attempt to, or harass, abuse or harm another person or group;</li>
+              <li>interfere or attempt to interfere with the proper functioning of the Service;</li>
+              <li>make any automated use of the system, or take any action that we deem to impose or to potentially impose an unreasonable or disproportionately large load on our servers or network infrastructure;</li>
+              <li>bypass any robot exclusion headers, password protections, or other measures we take to restrict access to the Service or use any software, technology, or device to scrape, spider, or crawl the Service or harvest or manipulate data; or</li>
+              <li>publish or link to malicious content intended to damage or disrupt another user’s browser or computer.</li>
+              <li>engage in advertising to, or solicitation of, other subscribers to buy or sell any products or services through the Service.</li>
+            </ul>
+          </p>
+          <h4>INDEMNITY BY USER</h4>
+          <p class='mumbo-jumbo'>You will defend, indemnify, and hold harmless Carnegie Mellon University and the <em>Moon Drawings</em> Team, its officers, directors, employees, agents and third parties, for any losses, costs, liabilities and expenses (including reasonable attorneys' fees) relating to or arising out of your use of the <em>Moon Drawings</em> Service, including any breach by you of these Terms.</p>
+          <h4>POSTING AND CONDUCT RESTRICTIONS.</h4>
+          <p class='mumbo-jumbo'>You may be able to provide (“User Content”).  You are solely responsible for the User Content that you post, upload, link to or otherwise make available via the Service. The Team reserves the right to remove any User Content from the Service at its discretion.</p>
+          <p class='mumbo-jumbo'>The following rules pertain to User Content. By transmitting and submitting any User Content while using the Service, you agree as follows:</p>
+          <ul>
+            <li>You are solely responsible for your content.</li>
+            <li>You will not post information that is malicious, false or inaccurate;</li>
+            <li>You will not submit content that is copyrighted or subject to third party proprietary rights, including privacy, publicity, trade secret, etc., unless you are the owner of such rights or have the appropriate permission from their rightful owner to specifically submit such content; and</li>
+            <li>You hereby affirm that we have the right to determine whether any of your User Content submissions are appropriate and comply with these Terms of Service, remove any and/or all of your submissions, and terminate your account with or without prior notice.</li>
+          </ul>
+          <p class='mumbo-jumbo'>You understand and agree that any liability, loss or damage that occurs as a result of the use of any User Content that you make available or access through your use of the Service is solely your responsibility. The Team is not responsible for any public display or misuse of your User Content. The Team does not, and cannot, pre-screen or monitor all User Content. However, at our discretion, we, or technology we employ, may monitor and/or record your interactions with the Service.</p>
+          <p class='mumbo-jumbo'>We reserve the right at all times (but will not have an obligation) to remove or refuse to distribute any User Content on the Services and to suspend or terminate users without liability to you. We also reserve the right to access, read, preserve, and disclose any information as we reasonably believe is necessary to (i) satisfy any applicable law, regulation, legal process or governmental request, (ii) enforce the Terms, including investigation of potential violations hereof, (iii) detect, prevent, or otherwise address fraud, security or technical issues, (iv) respond to user support requests, or (v) protect the rights, property or safety of <em>Moon Drawings</em>, its users and the public.</p>
+          <p class='mumbo-jumbo'>If, at any time you post any User Content to the Services, you automatically grant <em>Moon Drawings</em> a royalty-free, universal, perpetual, irrevocable, non-exclusive right (including any moral rights) and license to use, reproduce, modify, adapt, publish, retransmit, translate, create derivative works from, distribute, communicate to the public, publicly perform, or display such content (in whole or in part), and/or to incorporate it in other works in any form, media, or technology now known or later developed, for so long as any rights exist in such content. You also warrant that the holder of any rights, including moral rights in such content, has completely and effectively waived all such rights and validly and irrevocably granted to you the right to grant the license set forth in this agreement. You also permit any other user to access, display, view, store, and reproduce such content for such user's personal use.</p>
+          <p class='mumbo-jumbo'>Beyond the agreement above, all User Content submissions to this site are otherwise governed by the <a href="http://creativecommons.org/about/cc0" target="_blank">Creative Commons Zero (Public Domain) CC0 1.0 License</a>.</p>
+          <h4>ONLINE CONTENT DISCLAIMER</h4>
+          <p class='mumbo-jumbo'>Opinions, advice, statements, offers, or other information or content made available through the Service, but not directly by the Team, are those of their respective authors, and should not necessarily be relied upon. Such authors are solely responsible for such content. The Team does not guarantee the accuracy, completeness, or usefulness of any information on the Service and neither does the Team adopt nor endorse, nor is the Team responsible for, the accuracy or reliability of any opinion, advice, or statement made by parties other than the Team. The Team takes no responsibility and assumes no liability for any User Content that you or any other user or third party posts or sends over the Service.  Under no circumstances will the Team be responsible for any loss or damage resulting from anyone’s reliance on information or other content posted on the Service, or transmitted to users.</p>
+          <p class='mumbo-jumbo'>Though the Team strives to enforce these Terms of Use, you may be exposed to User Content that is inaccurate or objectionable. The Team reserves the right, but has no obligation, to monitor the materials posted in the public areas of the service or to limit or deny a user’s access to the Service or take other appropriate action if a user violates these Terms of Use or engages in any activity that violates the rights of any person or entity or which we deem unlawful, offensive, abusive, harmful or malicious. The Team shall have the right to remove any such material that in its sole opinion violates, or is alleged to violate, the law or this agreement or which might be offensive, or that might violate the rights, harm, or threaten the safety of users or others. Unauthorized use may result in criminal and/or civil prosecution under Federal, State and local law. If you become aware of misuse of our Service, please contact us at <a href='mailto:contact@moondrawings.org'>contact@moondrawings.org</a>.</p>
+          <h4>LINKS TO OTHER SITES AND/OR MATERIALS</h4>
+          <p class='mumbo-jumbo'>As part of the Service, the Team may provide you with convenient links to third party website(s) (“Third Party Sites”) as well as content or items belonging to or originating from third parties (the “Third Party Applications, Software or Content”). These links are provided as a courtesy to Service users. The Team has no control over Third Party Sites and Third Party Applications, Software or Content or the promotions, materials, information, goods or services available on these Third Party Sites or Third Party Applications, Software or Content. Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness by the Team, and the Team is not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content. Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply approval or endorsement thereof by the Team. If you decide to leave the <em>Moon Drawings</em> site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any site to which you navigate from the Site or relating to any applications you use or install from the site.</p>
+          <h4>LICENSE GRANT</h4>
+          <p class='mumbo-jumbo'>By posting any User Content via the Service, you expressly grant, and you represent and warrant that you have a right to grant, to the Team a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, reproduce, modify, publish, list information regarding, edit, translate, distribute, publicly perform, publicly display, and make derivative works of all such User Content and your name, voice, and/or likeness as contained in your User Content, if applicable, in whole or in part, and in any form, media or technology, whether now known or hereafter developed, for use in connection with the Service.</p>
+          <h4>INTELLECTUAL PROPERTY</h4>
+          <p class='mumbo-jumbo'>You acknowledge and agree that we and our licensors retain ownership of all intellectual property rights of any kind related to the Service, including applicable copyrights, trademarks and other proprietary rights. Other product and company names that are mentioned on the Service may be trademarks of their respective owners. We reserve all rights that are not expressly granted to you under this Agreement.</p>
+          <h4>EMAIL MAY NOT BE USED TO PROVIDE NOTICE</h4>
+          <p class='mumbo-jumbo'>Communications made through the Service’s e-mail and messaging system, will not constitute legal notice to the Team or any of its officers, employees, agents or representatives in any situation where notice to the Team is required by contract or any law or regulation.</p>
+          <h4>USER CONSENT TO RECEIVE COMMUNICATIONS <br />IN ELECTRONIC FORM</h4>
+          <p class='mumbo-jumbo'>For contractual purposes, you (a) consent to receive communications from the Team in an electronic form via the email address you have submitted; and (b) agree that all Terms of Use, agreements, notices, disclosures, and other communications that the Team provides to you electronically satisfy any legal requirement that such communications would satisfy if it were in writing. The foregoing does not affect your non-waivable rights.</p>
+          <p class='mumbo-jumbo'>We may also use your email address, to send you other messages, including information about the Team. You may opt out of such email by contacting us, requesting such change.</p>
+          <h4>WARRANTY DISCLAIMER</h4>
+          <p class='mumbo-jumbo'>THE SERVICE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, THE TEAM EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, REGARDING THE SERVICE INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, SECURITY, ACCURACY AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, THE TEAM MAKES NO WARRANTY OR REPRESENTATION THAT ACCESS TO OR OPERATION OF THE SERVICE WILL BE UNINTERRUPTED OR ERROR FREE. YOU ASSUME FULL RESPONSIBILITY AND RISK OF LOSS RESULTING FROM YOUR DOWNLOADING, UPLOADING, AND/OR USE OF FILES, INFORMATION, CONTENT OR OTHER MATERIAL OBTAINED FROM THE SERVICE. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF WARRANTY, SO THIS PROVISION MAY NOT APPLY TO YOU.</p>
+          <h4>LIMITATION OF DAMAGES; RELEASE</h4>
+          <p class='mumbo-jumbo'>TO THE EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE TEAM, ITS AFFILIATES, DIRECTORS, OR EMPLOYEES, OR ITS LICENSORS OR PARTNERS, BE LIABLE TO YOU FOR ANY LOSS OF PROFITS, USE, OR DATA, OR FOR ANY INCIDENTAL, INDIRECT, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, HOWEVER ARISING, THAT RESULT FROM (A) THE USE, DISCLOSURE, OR DISPLAY OF YOUR USER CONTENT; (B) YOUR USE OR INABILITY TO USE THE SERVICE; (C) THE SERVICE GENERALLY OR THE SOFTWARE OR SYSTEMS THAT MAKE THE SERVICE AVAILABLE; OR (D) ANY OTHER INTERACTIONS WITH THE TEAM OR ANY OTHER USER OF THE SERVICE, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE) OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT THE TEAM HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. SOME JURISDICTIONS LIMIT OR DO NOT PERMIT DISCLAIMERS OF LIABILITY, SO THIS PROVISION MAY NOT APPLY TO YOU.</p>
+          <h4>MODIFICATION OF TERMS OF USE</h4>
+          <p class='mumbo-jumbo'>We can amend these Terms of Use at any time and will update these Terms of Use in the event of any such amendments. It is your sole responsibility to check the Site from time to time to view any such changes in the Agreement. If you continue to use the Site, you signify your agreement to our revisions to these Terms of Use. However, we will notify you of material chances to the terms by posting a notice on our homepage and/or sending an email to the email address you provided to us upon registration. For this additional reason, you should keep your contact and profile information current. Any changes to these Terms (other than as set forth in this paragraph) or waiver of the Team’s rights hereunder shall not be valid or effective except in a written agreement bearing the physical signature of an officer of the Team. No purported waiver or modification of this Agreement by the Team via telephonic or email communications shall be valid.</p>
+          <h4>GENERAL TERMS</h4>
+          <p class='mumbo-jumbo'>If any part of this Agreement is held invalid or unenforceable, that portion of the Agreement will be construed consistent with applicable law.  The remaining portions will remain in full force and effect. Any failure on the part of the Team to enforce any provision of this Agreement will not be considered a waiver of our right to enforce such provision.  Our rights under this Agreement will survive any termination of this Agreement.</p>
+          <p class='mumbo-jumbo'>You agree that any cause of action related to or arising out of your relationship with the Team must commence within ONE year after the cause of action accrues.  Otherwise, such cause of action is permanently barred.</p>
+          <p class='mumbo-jumbo'>These Terms of Use and your use of the Site are governed by the federal laws of the United States of America and the laws of the Commonwealth of Pennsylvania, without regard to conflict of law provisions.</p>
+          <p class='mumbo-jumbo'>The Team may assign or delegate these Terms of Service and/or the Team’s Privacy Policy, in whole or in part, to any person or entity at any time with or without your consent. You may not assign or delegate any rights or obligations under the Terms of Service or Privacy Policy without the Team prior written consent, and any unauthorized assignment and delegation by you is void.</p>
+          <p class='mumbo-jumbo'>YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THE TERMS OF USE, AND WILL BE BOUND BY THESE TERMS AND CONDITIONS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS OF USE TOGETHER WITH THE PRIVACY POLICY AT <a href="privacy.html">http://www.moondrawings.org/privacy</a> REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.</p>
+        </div>
+      </div>
+    </div>
+    <footer class='footer'>
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-2 col-md-offset-1'>
+            <p class='text-muted'>
+              <a href='http://www.cmu.edu/index.shtml' target='_blank'>
+                Carnegie Mellon University
+              </a>
+              <br>
+              5000 Forbes Avenue <br>
+              College of Fine Arts, Room 111
+            </p>
+          </div>
+          <div class='col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-5 col-md-3'>
+            <p class='text-muted'>
+              <a href='http://studioforcreativeinquiry.org' target='_blank'>
+                The Frank-Ratchye STUDIO for Creative Inquiry
+              </a>
+              <br>
+              Email:
+              <a href='mailto:contact@moondrawings.org'>contact@moondrawings.org</a>
+              <br>Tel: +1.412.268.3451
+            </p>
+          </div>
+          <div class='col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-offset-0 col-md-3'>
+            <p class='text-muted'>
+              A project by
+              <a href='http://flong.com'>Golan Levin</a>
+              &
+              <a href='http://www.workergnome.com'>David Newbury</a>
+              <br>
+              in association with
+              <a href='http://moonarts.org'>CMU Moon Arts Group</a>
+              <br> and the
+              <a href='http://lunar.cs.cmu.edu'>CMU Planetary Robotics Team.</a>
+              <br>
+              &copy; 2015
+              - 2020
+              Carnegie Mellon University
+            </p>
+          </div>
+          <div class='col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-2'>
+            <p id='studio-logo'>
+              <a href='http://studioforcreativeinquiry.org' target='_blank'>
+                <img src='images/sfci-888888-150px-transparent.png'>
+              </a>
+              <div class='visible-xs-block'>
+                <a href='legal.html'>Legal information</a>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- - ----- JAVASCRIPTS ------------------------------------------------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src='js/application.js'></script>
+    
+  </body>
+</html>

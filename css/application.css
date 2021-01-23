@@ -1,0 +1,350 @@
+@charset "UTF-8";
+html {
+  background-color: #1f242a; }
+
+body {
+  background-color: #1f242a;
+  font-family: "Playfair Display", serif; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase; }
+
+a, a:hover, a:visited, a:active, h1, h2, h3, h4, h5 {
+  color: #cccccc; }
+
+p {
+  color: white; }
+
+.centered {
+  text-align: center; }
+
+button, .btn {
+  margin-top: 6px;
+  font-weight: 200;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase; }
+
+.input-group-btn button {
+  margin-top: 0; }
+
+.btn-success, .btn-success:visited {
+  background-color: #4a5665;
+  border-color: #3f4a56; }
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+  background-color: #556373;
+  border-color: #3f4a56; }
+
+.btn-success.disabled {
+  background-color: #2a3139;
+  border-color: #2a3139;
+  color: #888; }
+
+.text-muted {
+  color: #cbcbcb; }
+
+.subhead {
+  margin-top: -1.4em !important; }
+  @media (min-width: 767px) {
+    .subhead {
+      margin-top: -1.7em !important; } }
+
+.mumbo-jumbo {
+  font-size: 80%; }
+
+.mumbo-jumbo p {
+  font-size: 85%; }
+
+.content p.mumbo-jumbo {
+  font-size: 90%; }
+
+.header {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+  .header ul {
+    width: 100%; }
+  @media (min-width: 767px) {
+    .header ul {
+      width: inherit;
+      margin-top: 6px; } }
+  .header h3 {
+    padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px; }
+
+#studio-logo img {
+  max-width: 150px;
+  position: relative;
+  top: -5px; }
+
+.footer {
+  border-top: #1f242a 5px solid;
+  background-color: #14171b;
+  font-family: "Dosis", sans-serif;
+  text-align: center; }
+  @media (min-width: 767px) {
+    .footer {
+      text-align: left; } }
+  .footer p {
+    padding-top: 2.25em;
+    color: #888;
+    font-size: 90%; }
+
+.content {
+  background: #f0f0f0;
+  padding: 0 5px 40px; }
+  .content p, .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content .fake-p, .content ul {
+    font-family: "Playfair Display", serif;
+    max-width: 600px;
+    color: #333;
+    max-width: 600px;
+    margin: 1em auto 1em auto; }
+  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    font-weight: 400;
+    font-style: italic;
+    text-transform: inherit;
+    text-align: center; }
+  .content h1 {
+    font-size: 200%; }
+    @media (min-width: 767px) {
+      .content h1 {
+        font-size: 300%; } }
+  .content h2 {
+    font-size: 175%; }
+    @media (min-width: 767px) {
+      .content h2 {
+        font-size: 200%; } }
+  .content h3 {
+    font-size: 150%; }
+  .content h3:first-child {
+    margin-top: 50px; }
+  .content p {
+    font-size: 120%;
+    line-height: 1.8em; }
+  .content hr {
+    border-top: 1px dashed #d1d6dd;
+    margin: 0;
+    width: 90%;
+    margin-left: 5%; }
+  .content h3 + hr, .content h4 + hr {
+    margin-top: -0.7em; }
+  .content p a, .content p a:visited, .content p a:hover {
+    color: #606f82;
+    text-decoration: underline; }
+
+.content.flash-message {
+  padding: 4px 20px;
+  margin-top: 0px;
+  text-align: center;
+  background: #79899c; }
+  .content.flash-message h3, .content.flash-message h4, .content.flash-message h5, .content.flash-message h6 {
+    margin: 3px auto;
+    color: #1F242A; }
+  .content.flash-message p {
+    margin: 1px auto;
+    max-width: 80%;
+    color: #fefefe;
+    font-size: 100%; }
+
+.content.flash-message:first-child {
+  margin-top: 20px; }
+
+.jumbotron {
+  text-align: center;
+  background: linear-gradient(#1f242a, rgba(31, 36, 42, 0.6)), url(../images/gibbous_moon.jpg);
+  background-position: center top;
+  margin-bottom: 0px;
+  padding: 70px 0; }
+  .jumbotron h1 {
+    color: #cccccc; }
+
+#spots-left {
+  text-align: center;
+  border-top: #14171b 1px solid;
+  border-bottom: white 5px solid; }
+  #spots-left h3 {
+    margin-top: 20px; }
+
+#start-button {
+  top: -4px;
+  position: relative;
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 3px 16px;
+  color: #f0f0f0; }
+
+#browse-box {
+  margin: 0 auto 0 auto;
+  max-width: 1000px;
+  text-align: center; }
+
+#fake_drawing_box {
+  box-shadow: 15px 15px 25px #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #FFF;
+  margin: 0px auto 0 auto;
+  max-width: 500px;
+  padding: 25px;
+  border: 25px solid #FCFCFC;
+  max-width: 500px;
+  height: 500px;
+  padding: 0; }
+
+#submit-drawing {
+  box-shadow: 15px 15px 25px #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #FFF;
+  margin: 0px auto 0 auto;
+  max-width: 500px;
+  padding: 25px;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  text-align: right;
+  background-color: #1f242a;
+  padding: 4px 10px 6px;
+  border-radius: 0 0 5px 5px; }
+  #submit-drawing label {
+    font-size: 80%; }
+
+.drawing_holder {
+  box-shadow: 15px 15px 25px #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #FFF;
+  margin: 0px auto 0 auto;
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 20px auto; }
+  .drawing_holder img {
+    max-width: 100%; }
+
+.flagged-drawing {
+  font-family: "Dosis", sans-serif;
+  font-size: 130%;
+  text-align: center;
+  color: #b4bdc7;
+  margin-top: 45%;
+  margin-bottom: 45%; }
+
+.lighten-http {
+  color: #b4bdc7; }
+
+#haiku {
+  color: #79899c; }
+
+#basho {
+  font-style: italic;
+  font-size: 85%;
+  margin-top: -15px;
+  padding-left: 10px; }
+
+.shortcode {
+  text-align: center;
+  max-width: 500px;
+  font-family: "Dosis", sans-serif;
+  font-size: 130%; }
+  .shortcode a {
+    color: #4a5665; }
+
+.drawing-share {
+  text-align: center; }
+
+.sharing-button {
+  display: inline-block;
+  padding: 20px; }
+
+.fb-share {
+  position: relative;
+  top: -4px; }
+
+#drawing-box {
+  box-shadow: 15px 15px 25px #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #FFF;
+  margin: 0px auto 0 auto;
+  max-width: 1000px;
+  padding: 25px;
+  margin-top: -60px; }
+
+#approve {
+  box-shadow: 15px 15px 25px #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #FFF;
+  margin: 0px auto 0 auto;
+  max-width: 1000px;
+  padding: 25px;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  text-align: right;
+  background-color: #1f242a;
+  padding: 4px 10px 6px;
+  border-radius: 0 0 5px 5px; }
+  #approve label {
+    font-size: 80%; }
+
+.review_bucket {
+  width: 100px;
+  height: 100px;
+  margin: 10px 4px 30px 4px;
+  box-shadow: 3px 3px 8px #ccc;
+  border: 4px solid #FFF;
+  border-radius: 8px;
+  background-color: #FFF;
+  margin: 10px auto 30px; }
+  @media (min-width: 767px) {
+    .review_bucket {
+      width: 128px;
+      height: 128px; } }
+
+.thumbs {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-top: 25%;
+  font-size: 300%;
+  text-align: center; }
+
+.thumbs.up:hover {
+  background-color: rgba(0, 255, 0, 0.8);
+  border-radius: 4px 0 0 4px; }
+  .thumbs.up:hover:before {
+    content: "👍"; }
+
+.thumbs.down:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 0 4px 4px 0; }
+  .thumbs.down:hover:before {
+    content: "👎"; }
+
+.review_bucket.recommended {
+  border-color: #00ff00; }
+
+.review_bucket.flagged {
+  border-color: #ff0000; }
+
+#see-more {
+  text-align: center;
+  margin-top: -50px; }
+
+#mailchimp-thanks {
+  text-align: center;
+  background-color: #DDD;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 200;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase; }
+
+#defaultCanvas {
+  cursor: crosshair; }
+
+/* Landscape phones and smaller */
+/* Landscape phones and portrait tablets */
+/* Portrait tablets and small desktops */
+/* Portrait tablets and medium desktops */
+/* Large desktops and laptops */
